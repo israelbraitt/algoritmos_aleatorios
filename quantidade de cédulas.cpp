@@ -25,8 +25,8 @@ int main() {
     }
     
     if (n >= 20){
-        x20 = 1;
-        n -= 20;
+        x20 = n/20;
+        n -= x20*20;
     }else{
         x20 = 0;
     }
@@ -46,8 +46,8 @@ int main() {
     }
     
     if (n >= 2){
-        x2 = 1;
-        n -= 2;
+        x2 = n/2;
+        n -= x2*2;
     }else{
         x2 = 0;
     }
@@ -59,7 +59,7 @@ int main() {
         x1 = 0;
     }
     
-    cout << n_copia << endl;
+    cout << "VALOR:" << n_copia << endl;
     cout << x100 << " nota(s) de R$ 100,00" << endl;
     cout << x50 << " nota(s) de R$ 50,00" << endl;
     cout << x20 << " nota(s) de R$ 20,00" << endl;
